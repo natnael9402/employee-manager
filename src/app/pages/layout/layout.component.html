@@ -1,0 +1,14 @@
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a routerLink="/dashboard" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a routerLink="/employee" class="nav-link">Employee</a></li>
+        <li class="nav-item"><a routerLink="/project" class="nav-link">Project</a></li>
+        <li class="nav-item"><a routerLink="/project-employee" class="nav-link">Project-employee</a></li>
+      </ul>
+      <button class="rounded" (click)="logout()">LogOut</button>
+    </header>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
